@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccessMNS.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AccessMNS.krxieajmz9.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AccessMNS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AccessMNS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AccessMNS.props",
+      "PackagePath": "build\\AccessMNS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AccessMNS.props",
+      "PackagePath": "buildMultiTargeting\\AccessMNS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AccessMNS.props",
+      "PackagePath": "buildTransitive\\AccessMNS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
