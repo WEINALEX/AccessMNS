@@ -7,27 +7,35 @@
 @* <input type="checkbox" title="Navigation menu" class="navbar-toggler" /> *@
 
 <nav class="flex-column">
-    <div class="nav-item px-3">
+    <div class="nav-item">
+
+        <MudBadge Color="Color.Success" Bordered="true" Style="min-width: 25px; height: 25px; position: absolute; z-index: 2; left: 50%; top: 4%"></MudBadge>
+        <MudAvatar Size="Size.Large" Style="width: 80px; height: 80px; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1">
+            <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+        </MudAvatar>
+    </div>
+
+    <div class="nav-item navlink-position" style="top: 7rem">
         <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
             <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span>
         </NavLink>
     </div>
 
-    <div class="nav-item px-3">
+    <div class="nav-item navlink-position" style="top: 13rem">
         <NavLink class="nav-link" href="counter">
             <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span>
         </NavLink>
     </div>
 
-    <div class="nav-item px-3 navlink-position">
-        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Canaux de discussions" Style="height: 30px; font-size: 16px; font-family: 'Lucida Sans Unicode'">
+    <div class="nav-item navlink-position" style="top: 19rem">
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Canaux de discussion" Style="height: 30px; font-size: 16px; font-family: 'Lucida Sans Unicode'">
             <NavLink class="nav-link" href="weather">
-                <MudIcon Icon="@Icons.Material.Filled.Settings" Title="Canaux de discussions" Style="font-size: 32px"></MudIcon>
+                <MudIcon Icon="@Icons.Material.Filled.Settings" Title="Canaux de discussion" Style="font-size: 32px"></MudIcon>
             </NavLink>
         </MudTooltip>
     </div>
     
-    <div class="nav-item px-3 navlink-position" style="bottom: 12%;">
+    <div class="nav-item navlink-position" style="bottom: 6rem;">
         <MudTooltip Arrow="true" Placement="Placement.Right" Text="Paramètres" Class="navbar-tooltip" Style="font-weight: bold; height: 30px; font-size: 14px; font-family: 'Global User Interface'">
 			<NavLink class="nav-link" href="weather">
 				<MudIcon Icon="@Icons.Material.Filled.Settings" Title="Paramètre" Style="font-size: 32px"></MudIcon>
@@ -35,7 +43,7 @@
         </MudTooltip>
     </div>
     
-    <div class="nav-item px-3 navlink-position" style="bottom: 2%;">
+    <div class="nav-item navlink-position" style="bottom: 0rem;">
         <MudTooltip Arrow="true" Placement="Placement.Right" Text="Déconnexion" Class="navbar-tooltip" Style="height: 30px; font-size: 16px; font-family: 'Lucida Sans Unicode'">
             <NavLink class="nav-link" href="weather" >
                 <MudIcon Icon="@Icons.Material.Filled.Logout" Title="Déconnexion" Style="font-size: 32px"></MudIcon>

@@ -3,7 +3,7 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "AccessMNS.krxieajmz9.styles.css",
+      "Route": "AccessMNS.iyb46gri0p.styles.css",
       "AssetFile": "AccessMNS.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -17,7 +17,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5901"
+          "Value": "6191"
         },
         {
           "Name": "Content-Type",
@@ -25,21 +25,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
+          "Value": "\"drTtZj+58ZbYtvAgSUW+nltS+noKI2VMxkKxRUWB+H8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
+          "Value": "Sat, 08 Feb 2025 21:55:15 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "krxieajmz9"
+          "Value": "iyb46gri0p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
+          "Value": "sha256-drTtZj+58ZbYtvAgSUW+nltS+noKI2VMxkKxRUWB+H8="
         },
         {
           "Name": "label",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5901"
+          "Value": "6191"
         },
         {
           "Name": "Content-Type",
@@ -70,17 +70,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
+          "Value": "\"drTtZj+58ZbYtvAgSUW+nltS+noKI2VMxkKxRUWB+H8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
+          "Value": "Sat, 08 Feb 2025 21:55:15 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
+          "Value": "sha256-drTtZj+58ZbYtvAgSUW+nltS+noKI2VMxkKxRUWB+H8="
         }
       ]
     },

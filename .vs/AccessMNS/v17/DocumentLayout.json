@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|e:\\4 - formation\\projet_filrouge\\accessmns\\accessmns\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|solutionrelative:accessmns\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|e:\\4 - formation\\projet_filrouge\\accessmns\\accessmns\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|solutionrelative:accessmns\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|e:\\4 - formation\\projet_filrouge\\accessmns\\accessmns\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|solutionrelative:accessmns\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|e:\\4 - formation\\projet_filrouge\\accessmns\\accessmns\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|solutionrelative:accessmns\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A053D5D-9E91-4BFE-B678-CB9ADD2B0E9E}|AccessMNS\\AccessMNS.csproj|e:\\4 - formation\\projet_filrouge\\accessmns\\accessmns\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,24 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "AccessMNS\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "AccessMNS\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-08T20:12:55.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "AccessMNS\\Components\\Layout\\NavMenu.razor",
               "ToolTip": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "AccessMNS\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T18:53:20.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Program.cs",
               "RelativeDocumentMoniker": "AccessMNS\\Program.cs",
@@ -52,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "AccessMNS\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "AccessMNS\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAACDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAChAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T18:41:24.366Z",
               "EditorCaption": ""
