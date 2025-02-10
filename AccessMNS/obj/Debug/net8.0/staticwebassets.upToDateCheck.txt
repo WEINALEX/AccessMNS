@@ -2,3 +2,10 @@ wwwroot\app.css
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\flashmemory.png
+wwwroot\fonts\Inter-VariableFont_opsz,wght.ttf
+wwwroot\fonts\LexendDeca-VariableFont_wght.ttf
+wwwroot\fonts\Montserrat-VariableFont_wght.ttf
+wwwroot\fonts\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf
+wwwroot\fonts\Roboto-VariableFont_wdth,wght.ttf
+wwwroot\style.css

@@ -9,44 +9,48 @@
 <nav class="flex-column">
     <div class="nav-item">
 
-        <MudBadge Color="Color.Success" Bordered="true" Style="min-width: 25px; height: 25px; position: absolute; z-index: 2; left: 50%; top: 4%"></MudBadge>
+        <MudBadge Color="Color.Success" Bordered="true" Style="min-width: 2rem; height: 2rem; position: absolute; z-index: 2; left: 2.5rem; top: 2rem"></MudBadge>
         <MudAvatar Size="Size.Large" Style="width: 80px; height: 80px; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1">
             <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
         </MudAvatar>
     </div>
 
     <div class="nav-item navlink-position" style="top: 7rem">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-            <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span>
-        </NavLink>
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Accueil" Class="navbar-tooltip">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Home" Title="Accueil"></MudIcon>
+            </NavLink>
+        </MudTooltip>
     </div>
 
-    <div class="nav-item navlink-position" style="top: 13rem">
-        <NavLink class="nav-link" href="counter">
-            <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span>
-        </NavLink>
+    <div class="nav-item navlink-position" style="top: 12rem">
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Messages privés" Class="navbar-tooltip">
+            <NavLink class="nav-link" href="counter">
+                <MudIcon Class="navbar-icon" Icon="@Icons.Material.Outlined.Email" Title="Messages privés"></MudIcon>
+            </NavLink>
+        </MudTooltip>
     </div>
 
-    <div class="nav-item navlink-position" style="top: 19rem">
-        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Canaux de discussion" Style="height: 30px; font-size: 16px; font-family: 'Lucida Sans Unicode'">
+    <div class="nav-item navlink-position" style="top: 17rem">
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Canaux de discussion" Class="navbar-tooltip">
             <NavLink class="nav-link" href="weather">
-                <MudIcon Icon="@Icons.Material.Filled.Settings" Title="Canaux de discussion" Style="font-size: 32px"></MudIcon>
+                <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Chat" Title="Canaux de discussion"></MudIcon>
             </NavLink>
         </MudTooltip>
     </div>
     
-    <div class="nav-item navlink-position" style="bottom: 6rem;">
-        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Paramètres" Class="navbar-tooltip" Style="font-weight: bold; height: 30px; font-size: 14px; font-family: 'Global User Interface'">
+    <div class="nav-item navlink-position" style="top: 48rem;">
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Paramètres" Class="navbar-tooltip">
 			<NavLink class="nav-link" href="weather">
-				<MudIcon Icon="@Icons.Material.Filled.Settings" Title="Paramètre" Style="font-size: 32px"></MudIcon>
+                <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Settings" Title="Paramètre"></MudIcon>
 			</NavLink>
         </MudTooltip>
     </div>
     
-    <div class="nav-item navlink-position" style="bottom: 0rem;">
-        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Déconnexion" Class="navbar-tooltip" Style="height: 30px; font-size: 16px; font-family: 'Lucida Sans Unicode'">
+    <div class="nav-item navlink-position" style="top: 53rem">
+        <MudTooltip Arrow="true" Placement="Placement.Right" Text="Déconnexion" Class="navbar-tooltip">
             <NavLink class="nav-link" href="weather" >
-                <MudIcon Icon="@Icons.Material.Filled.Logout" Title="Déconnexion" Style="font-size: 32px"></MudIcon>
+                <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Logout" Title="Déconnexion"></MudIcon>
             </NavLink>
         </MudTooltip>
     </div>

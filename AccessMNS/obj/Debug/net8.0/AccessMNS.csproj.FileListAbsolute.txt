@@ -142,3 +142,4 @@ E:\4 - Formation\Projet_FilRouge\AccessMNS\AccessMNS\obj\Debug\net8.0\refint\Acc
 E:\4 - Formation\Projet_FilRouge\AccessMNS\AccessMNS\obj\Debug\net8.0\AccessMNS.pdb
 E:\4 - Formation\Projet_FilRouge\AccessMNS\AccessMNS\obj\Debug\net8.0\AccessMNS.genruntimeconfig.cache
 E:\4 - Formation\Projet_FilRouge\AccessMNS\AccessMNS\obj\Debug\net8.0\ref\AccessMNS.dll
+E:\4 - Formation\Projet_FilRouge\AccessMNS\AccessMNS\obj\Debug\net8.0\AccessMNS.sourcelink.json

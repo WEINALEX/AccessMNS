@@ -2,3 +2,5 @@
 *.vsidx
 *.suo
 *.dtbcache.v2
+*.vs
+*.json

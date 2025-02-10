@@ -4,24 +4,9 @@
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
-<MudLayout>
-    <MudAppBar Elevation="1" >
-        <MudHidden Breakpoint="Breakpoint.SmAndUp">
-			<MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        </MudHidden>
-        
-        <MudText Typo="Typo.h5" Class="ml-3">Access MNS</MudText>
-        <MudSpacer />
-        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
-        @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
-    </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Style="background: linear-gradient(#FF6616, #993D0D); max-width: 100px">
-        <NavMenu />
-    </MudDrawer>
-    <MudMainContent Class="mt-16 pa-4">
-        @Body
-    </MudMainContent>
-</MudLayout>
+<MudMainContent Class="pa-4">
+    @Body
+</MudMainContent>
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
@@ -39,25 +24,11 @@
         base.OnInitialized();
 
         _theme = new()
-        {
-            PaletteLight = _lightPalette,
-            PaletteDark = _darkPalette,
-            LayoutProperties = new LayoutProperties()
-        };
-    }
-
-
-    private void DrawerToggle()
-    {
-        Console.WriteLine("DrawerToggle triggered");
-        _drawerOpen = !_drawerOpen;
-    }
-
-    private void DarkModeToggle()
-    {
-        Console.WriteLine("DarkModeToggle triggered");
-        _isDarkMode = !_isDarkMode;
-        StateHasChanged();
+            {
+                PaletteLight = _lightPalette,
+                PaletteDark = _darkPalette,
+                LayoutProperties = new LayoutProperties()
+            };
     }
 
     private readonly PaletteLight _lightPalette = new()
@@ -98,11 +69,5 @@
         TableLines = "#33323e",
         Divider = "#292838",
         OverlayLight = "#1e1e2d80",
-    };
-
-    public string DarkLightModeButtonIcon => _isDarkMode switch
-    {
-        true => Icons.Material.Rounded.AutoMode,
-        false => Icons.Material.Outlined.DarkMode,
     };
 }
