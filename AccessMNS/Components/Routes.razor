@@ -1,6 +1,20 @@
 ﻿<Router AppAssembly="typeof(Program).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        @* <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" /> *@
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="typeof(MainLayout)">
+            <NotAuthorized>
+                <RedirectToLogin />
+            </NotAuthorized>
+        </AuthorizeRouteView>
         <FocusOnNavigate RouteData="routeData" Selector="h1" />
     </Found>
+    <NotFound>
+        <LayoutView Layout="typeof(LoginLayout)">
+            <h3>Page non trouvée</h3>
+        </LayoutView>
+    </NotFound>
 </Router>
+
+@code {
+    public string test = "";
+}

@@ -6,18 +6,17 @@
 
 @* <input type="checkbox" title="Navigation menu" class="navbar-toggler" /> *@
 
-<nav class="flex-column">
+<nav class="flex-column navbar-mainmenu">
     <div class="nav-item">
-
-        <MudBadge Color="Color.Success" Bordered="true" Style="min-width: 2rem; height: 2rem; position: absolute; z-index: 2; left: 2.5rem; top: 2rem"></MudBadge>
-        <MudAvatar Size="Size.Large" Style="width: 80px; height: 80px; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1">
+        <MudBadge Color="Color.Success" Bordered="true" Class="navbar-badge"></MudBadge>
+        <MudAvatar Size="Size.Large" Class="navbar-avatar">
             <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
         </MudAvatar>
     </div>
 
     <div class="nav-item navlink-position" style="top: 7rem">
         <MudTooltip Arrow="true" Placement="Placement.Right" Text="Accueil" Class="navbar-tooltip">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="home" Match="NavLinkMatch.All">
                 <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Home" Title="Accueil"></MudIcon>
             </NavLink>
         </MudTooltip>
@@ -39,7 +38,7 @@
         </MudTooltip>
     </div>
     
-    <div class="nav-item navlink-position" style="top: 48rem;">
+    <div class="nav-item navlink-position" style="top: 40rem;">
         <MudTooltip Arrow="true" Placement="Placement.Right" Text="Paramètres" Class="navbar-tooltip">
 			<NavLink class="nav-link" href="weather">
                 <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Settings" Title="Paramètre"></MudIcon>
@@ -47,9 +46,10 @@
         </MudTooltip>
     </div>
     
-    <div class="nav-item navlink-position" style="top: 53rem">
+    @* À AJOUTER - Ajouter une page pour supprimer la "Variable" de Session et rediriger vers Login *@
+    <div class="nav-item navlink-position" style="top: 45rem">
         <MudTooltip Arrow="true" Placement="Placement.Right" Text="Déconnexion" Class="navbar-tooltip">
-            <NavLink class="nav-link" href="weather" >
+            <NavLink class="nav-link" href="logout" >
                 <MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Logout" Title="Déconnexion"></MudIcon>
             </NavLink>
         </MudTooltip>

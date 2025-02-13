@@ -33,6 +33,110 @@
     font-style: normal;
 }
 
+
+/***************************/
+/* CSS de la page de Login */
+/***************************/
+
+.login-page {
+    background: url('images/login-background.jpg') no-repeat center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login-item {
+    background-color: #D9D9D9;
+    border-radius: 45px;
+/*    border: 1px solid #1e1e1e;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.login-text {
+    color: #000000;
+    padding: 2vh 0 0 4vh;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+
+.login-field {
+    background-color: #eeeeee;
+    margin: 0 3vh;
+    box-shadow: 4px 4px 4px inset;
+    
+    border-radius: 45px;
+/*    border: 1px solid #1e1e1e;*/
+}
+
+.login-field .mud-input.mud-input-outlined .mud-input-outlined-border {
+    border-radius: 45px !important;
+}
+
+.login-field .mud-input-outlined-border:hover {
+    border-radius: 45px !important;
+}
+
+.login-button {
+    color: #FFFFFF;
+    background-color: rgb(255,102,22, 0.55);
+    margin: 3vh 0 0 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+}
+
+.login-button:hover {
+    background-color: rgb(255,102,22, 0.85) !important;
+}
+
+.login-passwordtext {
+    padding: 0 0 0 4vh;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/***********************************/
+/* CSS pour la barre de Navigation */
+/***********************************/
+
+.navlink-position {
+    position: absolute;
+    width: auto;
+    right: 0%;
+}
+
+.navbar-avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.navbar-badge {
+    min-width: 2rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 2;
+    left: 2.5rem;
+    top: 2rem;
+}
+
+.navbar-mainmenu {
+    position: relative;
+    background: linear-gradient(#FF6616, #993D0D);
+    max-width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
 .navbar-tooltip {
     display: inline-block;
     height: 30px;
@@ -42,4 +146,20 @@
 
 .navbar-icon {
     font-size: 2rem;
+}
+
+.navbar-submenu {
+    position: absolute;
+    background-color: rgba(46, 58, 108, 1);
+    margin-left: 100px;
+    width: 140px;
+    height: 100%;
+    z-index: 1;
+}
+
+@media (min-width: 641px) {
+    .login-item {
+        width: 500px;
+    }
+
 }

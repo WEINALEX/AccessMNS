@@ -4,14 +4,19 @@
 @code {
     protected override async Task OnInitializedAsync()
     {
+        
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
 
         if (user == null || !user.Identity.IsAuthenticated)
         {
-            if (Navigation.Uri != "/login")
+            if (Navigation.Uri != "/")
             {
-                Navigation.NavigateTo("/login", true);
+                Navigation.NavigateTo("/", true);
             }
         }
     }

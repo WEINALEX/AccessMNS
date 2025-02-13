@@ -35,6 +35,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Layout/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/ChatChannels/NavMenuChatChannels.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0Q2hhbm5lbHNcTmF2TWVudUNoYXRDaGFubmVscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -43,20 +51,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Friends/NavMenuFriends.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGcmllbmRzXE5hdk1lbnVGcmllbmRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Homepage/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lcGFnZVxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Homepage/NavMenuHomepage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lcGFnZVxOYXZNZW51SG9tZXBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Login/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpblxMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Login/LoginLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpblxMb2dpbkxheW91dC5yYXpvcg==
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Login/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpblxMb2dvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Login/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpblxSZWRpcmVjdFRvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/PrivateMessages/NavMenuPrivateMessages.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcml2YXRlTWVzc2FnZXNcTmF2TWVudVByaXZhdGVNZXNzYWdlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Settings/Setting.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZXR0aW5nc1xTZXR0aW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/Weather.razor]

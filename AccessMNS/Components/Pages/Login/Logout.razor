@@ -1,0 +1,11 @@
+﻿@page "/logout"
+@inject CustomAuthenticationStateProvider AuthStateProvider
+
+@code {
+
+	protected override async void OnInitialized()
+	{
+		await AuthStateProvider.LogoutAsync();
+	}
+
+}

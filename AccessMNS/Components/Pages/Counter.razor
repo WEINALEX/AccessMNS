@@ -2,7 +2,17 @@
 @attribute [Authorize]
 @rendermode InteractiveServer
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>AccessMNS - Counter</PageTitle>
+
+<nav class="flex-column">
+	<div class="nav-item" style="top: 7rem">
+		<MudTooltip Arrow="true" Placement="Placement.Right" Text="Accueil" Class="navbar-tooltip">
+			<NavLink class="nav-link" href="home" Match="NavLinkMatch.All">
+				<MudIcon Class="navbar-icon" Icon="@Icons.Material.Filled.Home" Title="Accueil"></MudIcon>
+			</NavLink>
+		</MudTooltip>
+	</div>
+</nav>
 
 <h1>Counter</h1>
 

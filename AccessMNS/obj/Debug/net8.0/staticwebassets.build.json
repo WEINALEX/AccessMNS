@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e5y5j0A3fGI809hWCSpETie03XpOEx+kpju/oMhfk0Q=",
+  "Hash": "csTdi/wW/4t0r+BNvflebOBNR+kSnE9z5jehWPwDwO8=",
   "Source": "AccessMNS",
   "BasePath": "_content/AccessMNS",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "krxieajmz9",
-      "Integrity": "kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=",
+      "Fingerprint": "zw8o0gey3e",
+      "Integrity": "I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AccessMNS.styles.css"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "krxieajmz9",
-      "Integrity": "kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=",
+      "Fingerprint": "zw8o0gey3e",
+      "Integrity": "I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccessMNS.bundle.scp.css"
@@ -183,6 +183,174 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\flashmemory.png",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "flashmemory#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uj6kx7tl2r",
+      "Integrity": "KqsErkxDa6MAxoHHQieWJDoBBepnXdpvRn/0B3B6QH4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\flashmemory.png"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Inter-VariableFont_opsz,wght.ttf",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "fonts/Inter-VariableFont_opsz,wght#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vb2dpb5y3u",
+      "Integrity": "C+I5nqkl8fg/+XR2R2HamGDsUHQu0ppdTB/9DFx6w6g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Inter-VariableFont_opsz,wght.ttf"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\LexendDeca-VariableFont_wght.ttf",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "fonts/LexendDeca-VariableFont_wght#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wqs544sflm",
+      "Integrity": "OEtyH+86BUTHdwU9Sy+2Y9GjklUFYv5WJyY+qjCpbX0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\LexendDeca-VariableFont_wght.ttf"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Montserrat-VariableFont_wght.ttf",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "fonts/Montserrat-VariableFont_wght#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tx639h9f9h",
+      "Integrity": "4SKIwD5Po3IaynyphPJcBCCJ3DWQ4gfEOlcZnXtKXNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-VariableFont_wght.ttf"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8446fto2gi",
+      "Integrity": "WF0HdWp/XMo03j5iKiP16Y1g78lqycnnxrwlH+oECFQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Roboto-VariableFont_wdth,wght.ttf",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "fonts/Roboto-VariableFont_wdth,wght#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yce0hk55vz",
+      "Integrity": "slmG0Ycwlgx7JzhKsrxQCFauf+nnHJhQAZGV/5AZ8LI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Roboto-VariableFont_wdth,wght.ttf"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\images\\login-background.jpg",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "images/login-background#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s0x63agzkj",
+      "Integrity": "rPd/PTmW4OYLTGydoq47qdCU7JtX6F8yREXWU74Ras4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login-background.jpg"
+    },
+    {
+      "Identity": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\style.css",
+      "SourceId": "AccessMNS",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\",
+      "BasePath": "_content/AccessMNS",
+      "RelativePath": "style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g71iqjy4tf",
+      "Integrity": "nHwTM+haUfBVBLyObw6QgVb55C6lFIFETcIKVkUbKfw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
     }
   ],
   "Endpoints": [
@@ -361,7 +529,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5901"
+          "Value": "5938"
         },
         {
           "Name": "Content-Type",
@@ -369,11 +537,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
+          "Value": "\"I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
+          "Value": "Thu, 13 Feb 2025 16:51:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -383,97 +551,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
-        }
-      ]
-    },
-    {
-      "Route": "AccessMNS.krxieajmz9.bundle.scp.css",
-      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccessMNS.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5901"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "krxieajmz9"
-        },
-        {
-          "Name": "label",
-          "Value": "AccessMNS.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
-        }
-      ]
-    },
-    {
-      "Route": "AccessMNS.krxieajmz9.styles.css",
-      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AccessMNS.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5901"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "krxieajmz9"
-        },
-        {
-          "Name": "label",
-          "Value": "AccessMNS.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
+          "Value": "sha256-I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks="
         }
       ]
     },
@@ -488,7 +566,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5901"
+          "Value": "5938"
         },
         {
           "Name": "Content-Type",
@@ -496,11 +574,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q=\""
+          "Value": "\"I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:41:35 GMT"
+          "Value": "Thu, 13 Feb 2025 16:51:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -510,7 +588,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kJ7isStnIa6ZLN6bnL91XdyY3GwXYM5sskHM4ncNQ3Q="
+          "Value": "sha256-I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks="
+        }
+      ]
+    },
+    {
+      "Route": "AccessMNS.zw8o0gey3e.bundle.scp.css",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccessMNS.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 16:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zw8o0gey3e"
+        },
+        {
+          "Name": "label",
+          "Value": "AccessMNS.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks="
+        }
+      ]
+    },
+    {
+      "Route": "AccessMNS.zw8o0gey3e.styles.css",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AccessMNS.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 16:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zw8o0gey3e"
+        },
+        {
+          "Name": "label",
+          "Value": "AccessMNS.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I+Pd4AP9nDRbwRsFIcLVHACF+yf+wFKxG/ChAHHPeks="
         }
       ]
     },
@@ -537,7 +705,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:38:06 GMT"
+          "Value": "Tue, 11 Feb 2025 13:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -574,7 +742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 18:38:06 GMT"
+          "Value": "Tue, 11 Feb 2025 13:51:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -839,6 +1007,662 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "flashmemory.png",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\flashmemory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "83648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KqsErkxDa6MAxoHHQieWJDoBBepnXdpvRn/0B3B6QH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 21:57:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KqsErkxDa6MAxoHHQieWJDoBBepnXdpvRn/0B3B6QH4="
+        }
+      ]
+    },
+    {
+      "Route": "flashmemory.uj6kx7tl2r.png",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\flashmemory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "83648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KqsErkxDa6MAxoHHQieWJDoBBepnXdpvRn/0B3B6QH4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 21:57:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uj6kx7tl2r"
+        },
+        {
+          "Name": "label",
+          "Value": "flashmemory.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KqsErkxDa6MAxoHHQieWJDoBBepnXdpvRn/0B3B6QH4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Inter-VariableFont_opsz,wght.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Inter-VariableFont_opsz,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "874708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C+I5nqkl8fg/+XR2R2HamGDsUHQu0ppdTB/9DFx6w6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C+I5nqkl8fg/+XR2R2HamGDsUHQu0ppdTB/9DFx6w6g="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Inter-VariableFont_opsz,wght.vb2dpb5y3u.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Inter-VariableFont_opsz,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "874708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C+I5nqkl8fg/+XR2R2HamGDsUHQu0ppdTB/9DFx6w6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vb2dpb5y3u"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/Inter-VariableFont_opsz,wght.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C+I5nqkl8fg/+XR2R2HamGDsUHQu0ppdTB/9DFx6w6g="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/LexendDeca-VariableFont_wght.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\LexendDeca-VariableFont_wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OEtyH+86BUTHdwU9Sy+2Y9GjklUFYv5WJyY+qjCpbX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OEtyH+86BUTHdwU9Sy+2Y9GjklUFYv5WJyY+qjCpbX0="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/LexendDeca-VariableFont_wght.wqs544sflm.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\LexendDeca-VariableFont_wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OEtyH+86BUTHdwU9Sy+2Y9GjklUFYv5WJyY+qjCpbX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wqs544sflm"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/LexendDeca-VariableFont_wght.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OEtyH+86BUTHdwU9Sy+2Y9GjklUFYv5WJyY+qjCpbX0="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Montserrat-VariableFont_wght.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Montserrat-VariableFont_wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "688600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SKIwD5Po3IaynyphPJcBCCJ3DWQ4gfEOlcZnXtKXNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SKIwD5Po3IaynyphPJcBCCJ3DWQ4gfEOlcZnXtKXNs="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Montserrat-VariableFont_wght.tx639h9f9h.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Montserrat-VariableFont_wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "688600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SKIwD5Po3IaynyphPJcBCCJ3DWQ4gfEOlcZnXtKXNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tx639h9f9h"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/Montserrat-VariableFont_wght.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SKIwD5Po3IaynyphPJcBCCJ3DWQ4gfEOlcZnXtKXNs="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.8446fto2gi.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WF0HdWp/XMo03j5iKiP16Y1g78lqycnnxrwlH+oECFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8446fto2gi"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF0HdWp/XMo03j5iKiP16Y1g78lqycnnxrwlH+oECFQ="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WF0HdWp/XMo03j5iKiP16Y1g78lqycnnxrwlH+oECFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF0HdWp/XMo03j5iKiP16Y1g78lqycnnxrwlH+oECFQ="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Roboto-VariableFont_wdth,wght.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Roboto-VariableFont_wdth,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "468308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"slmG0Ycwlgx7JzhKsrxQCFauf+nnHJhQAZGV/5AZ8LI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-slmG0Ycwlgx7JzhKsrxQCFauf+nnHJhQAZGV/5AZ8LI="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Roboto-VariableFont_wdth,wght.yce0hk55vz.ttf",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Roboto-VariableFont_wdth,wght.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "468308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"slmG0Ycwlgx7JzhKsrxQCFauf+nnHJhQAZGV/5AZ8LI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 12:28:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yce0hk55vz"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/Roboto-VariableFont_wdth,wght.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-slmG0Ycwlgx7JzhKsrxQCFauf+nnHJhQAZGV/5AZ8LI="
+        }
+      ]
+    },
+    {
+      "Route": "images/login-background.jpg",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\images\\login-background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7011322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPd/PTmW4OYLTGydoq47qdCU7JtX6F8yREXWU74Ras4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 13:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPd/PTmW4OYLTGydoq47qdCU7JtX6F8yREXWU74Ras4="
+        }
+      ]
+    },
+    {
+      "Route": "images/login-background.s0x63agzkj.jpg",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\images\\login-background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7011322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPd/PTmW4OYLTGydoq47qdCU7JtX6F8yREXWU74Ras4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 13:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s0x63agzkj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/login-background.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPd/PTmW4OYLTGydoq47qdCU7JtX6F8yREXWU74Ras4="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nHwTM+haUfBVBLyObw6QgVb55C6lFIFETcIKVkUbKfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 17:42:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nHwTM+haUfBVBLyObw6QgVb55C6lFIFETcIKVkUbKfw="
+        }
+      ]
+    },
+    {
+      "Route": "style.g71iqjy4tf.css",
+      "AssetFile": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nHwTM+haUfBVBLyObw6QgVb55C6lFIFETcIKVkUbKfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 17:42:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g71iqjy4tf"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nHwTM+haUfBVBLyObw6QgVb55C6lFIFETcIKVkUbKfw="
         }
       ]
     }

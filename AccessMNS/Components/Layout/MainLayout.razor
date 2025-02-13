@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 
 <MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
 <MudPopoverProvider />
@@ -6,17 +7,23 @@
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Elevation="1" >
-        <MudHidden Breakpoint="Breakpoint.SmAndUp">
-			<MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudHidden Breakpoint="Breakpoint.MdAndUp">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         </MudHidden>
-        
+
         <MudText Typo="Typo.h5" Class="ml-3">Access MNS</MudText>
         <MudSpacer />
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
         @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Style="background: linear-gradient(#FF6616, #993D0D); max-width: 100px">
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Style="border-radius: 0 25px 25px 0;">
         <NavMenu />
+        <nav class="flex-column navbar-submenu">
+        @if (Navigation.Uri == Navigation.BaseUri + "home")
+        {
+            <NavMenuHomepage />
+        }
+        </nav>
     </MudDrawer>
     <MudMainContent Class="mt-16 pa-4">
         @Body

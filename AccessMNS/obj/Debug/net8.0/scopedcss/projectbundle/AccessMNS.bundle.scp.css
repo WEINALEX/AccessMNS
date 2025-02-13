@@ -170,12 +170,12 @@ main[b-y7dkc16kk6] {
     }
 
 .nav-item[b-eampp6qsmc]  a.active {
-    background-color: rgba(46,58,108,0.85);
-    box-shadow: rgba(0,0,0,0.4) 0 4px 4px;
+    background-color: rgba(46, 58, 108, 1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 4px;
 }
 
 .nav-item[b-eampp6qsmc]  .nav-link:hover {
-    background-color: rgba(46,58,108,0.3);
+    background-color: rgba(46, 58, 108, 0.3);
     color: white;
 }
 
@@ -185,12 +185,6 @@ main[b-y7dkc16kk6] {
 
 .navbar-toggler:checked ~ .nav-scrollable[b-eampp6qsmc] {
     display: block;
-}
-
-.navlink-position[b-eampp6qsmc] {
-    position: absolute;
-    width: auto;
-    right: 0%;
 }
 
 @media (min-width: 641px) {

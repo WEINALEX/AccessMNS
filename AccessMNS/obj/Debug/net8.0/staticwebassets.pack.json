@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccessMNS.bundle.scp.css",
-      "PackagePath": "staticwebassets\\AccessMNS.krxieajmz9.bundle.scp.css"
+      "PackagePath": "staticwebassets\\AccessMNS.zw8o0gey3e.bundle.scp.css"
     },
     {
       "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\app.css",
@@ -19,6 +19,38 @@
     {
       "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\flashmemory.png",
+      "PackagePath": "staticwebassets\\flashmemory.png"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Inter-VariableFont_opsz,wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Inter-VariableFont_opsz,wght.ttf"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\LexendDeca-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\LexendDeca-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Montserrat-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\fonts\\Roboto-VariableFont_wdth,wght.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Roboto-VariableFont_wdth,wght.ttf"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\images\\login-background.jpg",
+      "PackagePath": "staticwebassets\\images\\login-background.jpg"
+    },
+    {
+      "Id": "E:\\4 - Formation\\Projet_FilRouge\\AccessMNS\\AccessMNS\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AccessMNS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

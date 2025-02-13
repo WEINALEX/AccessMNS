@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using MudBlazor;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using AccessMNS.Services;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,10 +26,16 @@ builder.Services.AddRazorComponents()
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/login";
+        options.LoginPath = "/";
         options.AccessDeniedPath = "/access-denied";
     });
 
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<CustomAuthenticationStateProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider>(provider =>
+    provider.GetRequiredService<CustomAuthenticationStateProvider>());
+
+builder.Services.AddAuthorizationCore();
 builder.Services.AddAuthorization();
 
 builder.Services.AddMemoryCache();
