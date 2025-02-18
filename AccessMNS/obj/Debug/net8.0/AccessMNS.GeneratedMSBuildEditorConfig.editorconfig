@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/ChatChannels/ChatChannel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0Q2hhbm5lbHNcQ2hhdENoYW5uZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/4 - Formation/Projet_FilRouge/AccessMNS/AccessMNS/Components/Pages/ChatChannels/NavMenuChatChannels.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0Q2hhbm5lbHNcTmF2TWVudUNoYXRDaGFubmVscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

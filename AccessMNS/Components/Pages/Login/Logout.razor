@@ -1,11 +1,15 @@
 ﻿@page "/logout"
 @inject CustomAuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Navigation
+
+<PageTitle>AccessMNS</PageTitle>
 
 @code {
-
 	protected override async void OnInitialized()
 	{
 		await AuthStateProvider.LogoutAsync();
+		StateHasChanged();
+		await Task.Delay(200);
+		Navigation.NavigateTo("/", true);
 	}
-
 }

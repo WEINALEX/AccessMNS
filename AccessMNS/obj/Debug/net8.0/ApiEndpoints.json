@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "ContainingType": "AccessMNS.Controllers.MessageController",
+    "Method": "PostMessage",
+    "RelativePath": "api/messages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "AccessMNS.Models.Message",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccessMNS.Controllers.MessageController",
+    "Method": "GetMessages",
+    "RelativePath": "api/messages/{idCanaux}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCanaux",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,14 +1,36 @@
 using AccessMNS.Components;
+using AccessMNS.Classes;
+using AccessMNS.Services;
+using AccessMNS.MongoDb;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using MudBlazor;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using AccessMNS.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
+using AccessMNS.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSignalR();
+builder.Services.AddHttpClient();
+builder.Services.AddControllers();
+
+// Configuration MongoDB
+builder.Services.Configure<MongoDbSettings>(
+    builder.Configuration.GetSection("MongoDbSettings"));
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+{
+    var settings = sp.GetRequiredService<IOptions<MongoDbSettings>>().Value;
+    return new MongoClient(settings.ConnectionString);
+});
+
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+builder.Services.AddScoped<MessageController>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -55,6 +77,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAntiforgery();
+
+// Mappez le hub SignalR sur un chemin distinct (ici "/chathub").
+app.MapHub<ChatHub>("/chathub");
+app.MapControllers();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();

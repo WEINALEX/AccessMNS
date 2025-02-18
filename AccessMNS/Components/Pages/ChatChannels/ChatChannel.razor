@@ -1,0 +1,89 @@
+﻿@page "/chatchannel/{id:int}&{channel:int}"
+@using Microsoft.AspNetCore.SignalR.Client
+@inject NavigationManager Navigation
+@inject HttpClient Http
+@inject MessageController messageController
+
+<PageTitle>@($"AccessMNS - {Channel}")</PageTitle>
+
+<ul>
+    @foreach (Message message in chatMessages)
+    {
+        <li>@message.DateHeureEnvoi : @message.ContenuMessage - Envoyé par @message.IdUser </li>
+    }
+</ul>
+
+<MudTextField T="string" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" Class="w-50" Immediate="true" MaxLength="255" TextUpdateSuppression="false"></MudTextField>
+<MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Primary" IconSize="Size.Large" OnClick="SendMessage">Envoyer</MudButton>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    [Parameter] public int Channel { get; set; }
+
+    // Simulation base de données
+    private string name = "";
+    private string messageSent = "";
+    private string currentGroup = "";
+    private List<Message>? chatMessages = new List<Message>();
+
+    private HubConnection? hubConnection;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadMessages();
+        // chatMessages = await messageController.GetMessages(Channel);
+
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/chathub"))
+            .WithAutomaticReconnect()
+            .Build();
+
+        hubConnection.On<Message>("ReceiveMessage", (message) =>
+        {
+            chatMessages.Add(message);
+            StateHasChanged();
+        });
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("JoinChannel", Channel);
+    }
+
+    private async Task LoadMessages()
+    {
+        chatMessages = await Http.GetFromJsonAsync<List<Message>>($"https://localhost:44321/api/messages/{Channel}");
+        StateHasChanged();
+    }
+
+    private async Task SendMessage()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
+            messageSent = string.Empty;
+            await LoadMessages();
+        }
+    }
+
+    private async Task SendPressEnter(KeyboardEventArgs args)
+    {
+        if (args.Code == "Enter" && !string.IsNullOrEmpty(messageSent) && hubConnection is not null)
+        {
+            await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
+            messageSent = string.Empty;
+            await Task.Delay(100);
+            await LoadMessages();
+        }
+    }
+
+    public bool IsConnected =>
+        hubConnection?.State == HubConnectionState.Connected;
+
+    // Pour un nettoyage propre lorsque le composant est supprimé
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+}
