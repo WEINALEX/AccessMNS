@@ -7,7 +7,7 @@
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Elevation="1" >
-        <MudHidden Breakpoint="Breakpoint.MdAndUp">
+        <MudHidden Breakpoint="Breakpoint.LgAndUp">
             <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         </MudHidden>
 
@@ -16,7 +16,7 @@
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
         @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Style="border-radius: 0 25px 25px 0;">
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Class="navbar-drawer">
         <NavMenu />
         <nav class="flex-column navbar-submenu">
         @if (Navigation.Uri == Navigation.BaseUri + "home")
@@ -25,7 +25,7 @@
         }
         </nav>
     </MudDrawer>
-    <MudMainContent Class="mt-16 pa-4">
+    <MudMainContent Class="mt-16 pa-4 h-100">
         @Body
     </MudMainContent>
 </MudLayout>

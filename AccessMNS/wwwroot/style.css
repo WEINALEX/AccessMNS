@@ -105,6 +105,10 @@
 /* CSS pour la barre de Navigation */
 /***********************************/
 
+.navbar-drawer {
+    border-radius: 0 25px 25px 0;
+}
+
 .navlink-position {
     position: absolute;
     width: auto;
@@ -157,9 +161,154 @@
     z-index: 1;
 }
 
+
+/***********************************/
+/* CSS pour les différents Channel */
+/***********************************/
+
+.card-font {
+    font-family: Inter;
+}
+
+.card-avatar {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.card-content {
+    max-width: auto;
+    height: auto;
+}
+
+.card-received {
+    background-color: #F2EEEE;
+    border-radius: 25px 25px;
+    border: 1px solid #B3B3B3;
+}
+
+.received-fontcolor {
+    color: #757575;
+}
+
+.card-sender {
+    position: relative;
+    background-color: white;
+    border-radius: 25px 25px;
+    border: 1px solid #B3B3B3;
+}
+
+.card-sender:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #021652;
+    opacity: 0.7;
+    border-radius: 25px 25px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sender-fontcolor {
+    color: #F3F3F3;
+    z-index: 2;
+}
+
+.sender-text {
+    opacity: 0.7;
+    
+}
+
+.card-username {
+    font-weight: 500;
+}
+
+.message-container {
+    position: fixed;
+    margin-top: 9vh;
+    height: 75%;
+    margin-bottom: 10vh;
+    overflow-y: auto;
+}
+
+.sentbar {
+    position: fixed;
+    bottom: 2vh;
+    width: 100vh;
+    justify-content: center;
+}
+
+
 @media (min-width: 641px) {
     .login-item {
         width: 500px;
     }
 
+    .card-avatar {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .sentbar {
+        position: fixed;
+        bottom: 2vh;
+        width: auto;
+        left: 10vh;
+        right: 10vh;
+    }
+
+    .message-container {
+        height: 75%;
+        margin-top: 9vh;
+        width: auto;
+        left: 10vh;
+        right: 10vh;
+        overflow-y: scroll;
+    }
+
+}
+
+@media (min-width: 850px) {
+    .navbar-drawer {
+        border-radius: 0 25px 25px 0;
+        width: 320px !important;
+    }
+
+    .mud-drawer.mud-drawer-responsive.mud-drawer-pos-left.mud-drawer--closed, .mud-drawer.mud-drawer-persistent.mud-drawer-pos-left.mud-drawer--closed {
+        box-shadow: none;
+        left: calc(-1* 320px) !important;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-submenu {
+        width: 220px;
+    }
+
+    .card-content {
+        max-width: 60%;
+    }
+
+    .message-container {
+        left: 15vh;
+        right: 25vh;
+    }
+
+    .sentbar {
+        left: 15vh;
+        right: 25vh;
+    }
+}
+
+@media (min-width: 1450px) {
+    .message-container {
+        left: 33vh;
+        right: 35vh;
+    }
+
+    .sentbar {
+        left: 33vh;
+        right: 35vh;
+    }
 }

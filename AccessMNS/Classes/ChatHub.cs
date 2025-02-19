@@ -40,14 +40,14 @@ namespace AccessMNS.Classes
             await Clients.Group(idCanaux.ToString()).SendAsync("ReceiveMessage", message);
         }
 
-        public async Task JoinChannel(string idCanaux)
+        public async Task JoinChannel(int idCanaux)
         {
-            await Groups.AddToGroupAsync(Context.ConnectionId, idCanaux);
+            await Groups.AddToGroupAsync(Context.ConnectionId, idCanaux.ToString());
         }
 
-        public async Task LeaveChannel(string idCanaux)
+        public async Task LeaveChannel(int idCanaux)
         {
-            await Groups.RemoveFromGroupAsync(Context.ConnectionId, idCanaux);
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, idCanaux.ToString());
         }
     }
 }

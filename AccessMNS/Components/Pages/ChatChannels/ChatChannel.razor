@@ -2,19 +2,78 @@
 @using Microsoft.AspNetCore.SignalR.Client
 @inject NavigationManager Navigation
 @inject HttpClient Http
-@inject MessageController messageController
 
 <PageTitle>@($"AccessMNS - {Channel}")</PageTitle>
 
-<ul>
-    @foreach (Message message in chatMessages)
-    {
-        <li>@message.DateHeureEnvoi : @message.ContenuMessage - Envoyé par @message.IdUser </li>
-    }
-</ul>
+<MudContainer>
+    <MudGrid Class="h-100">
+        <MudContainer Class="card-font message-container">
+            @foreach (Message message in chatMessages)
+            {
+                if (Id == message.IdUser)
+                {
+                    <MudItem xs="12" Class="d-flex p-0 justify-content-end" Style="margin-right: 9vh">
+                        <MudText Typo="Typo.button">@message.DateHeureEnvoi</MudText>
+                    </MudItem>
 
-<MudTextField T="string" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" Class="w-50" Immediate="true" MaxLength="255" TextUpdateSuppression="false"></MudTextField>
-<MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Primary" IconSize="Size.Large" OnClick="SendMessage">Envoyer</MudButton>
+                    <MudItem xs="12" Class="d-flex justify-content-end mb-5">
+                        <MudItem Class="d-flex p-1 card-content">
+                            <MudCard Elevation="3" Class="mb-3 card-sender w-auto">
+                                <MudCardContent Class="sender-fontcolor">
+                                    <MudText Typo="Typo.button" GutterBottom="true" Class="card-username">Envoyé par @message.IdUser</MudText>
+                                    <MudText Typo="Typo.body2" Class="text-break sender-text">@message.ContenuMessage</MudText>
+                                </MudCardContent>
+                            </MudCard>
+                        </MudItem>
+
+                        <MudItem Class="d-flex pt-1">
+                            <MudAvatar Elevation="3" Class="card-avatar">
+                                <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                            </MudAvatar>
+                        </MudItem>
+                    </MudItem>
+                }
+                else
+                {
+                    <MudItem xs="12" Class="d-flex p-0" Style="margin-left: 8vh">
+                        <MudText Typo="Typo.button">@message.DateHeureEnvoi</MudText>
+                    </MudItem>
+
+                    <MudItem xs="12" Class="d-flex">
+                        <MudItem Class="pt-1">
+                            <MudAvatar Elevation="1" Class="card-avatar">
+                                <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                            </MudAvatar>
+                        </MudItem>
+
+
+                        <MudItem Class="d-flex p-1 card-content">
+                            <MudCard Elevation="3" Class="mb-3 card-received w-auto">
+                                <MudCardContent>
+                                    <MudText Typo="Typo.button" GutterBottom="true" Class="card-username">Envoyé par @message.IdUser</MudText>
+                                    <MudText Typo="Typo.body2" Class="text-break">@message.ContenuMessage</MudText>
+                                </MudCardContent>
+                            </MudCard>
+                        </MudItem>
+                    </MudItem>
+                }
+            }
+
+            @* <MudContainer> *@
+                <MudItem xs="12" Class="d-flex sentbar">
+                    <MudItem Class="w-75">
+                        <MudTextField T="string" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" 
+                            Immediate="true" TextUpdateSuppression="false" AutoGrow="true" MaxLines="6"></MudTextField>
+                    </MudItem>
+                
+                    <MudItem>
+                        <MudIconButton Icon="@Icons.Material.Filled.Send" Size="Size.Large" ButtonType="ButtonType.Button" Variant="Variant.Text" Color="Color.Primary" OnClick="SendMessage">Envoyer</MudIconButton>
+                    </MudItem>
+                </MudItem>
+            @* </MudContainer> *@
+        </MudContainer>
+    </MudGrid>
+</MudContainer>
 
 @code {
     [Parameter] public int Id { get; set; }
@@ -24,6 +83,9 @@
     private string name = "";
     private string messageSent = "";
     private string currentGroup = "";
+    private bool IsEmpty => string.IsNullOrEmpty(messageSent);
+
+    // Stockage des messages
     private List<Message>? chatMessages = new List<Message>();
 
     private HubConnection? hubConnection;
@@ -31,7 +93,6 @@
     protected override async Task OnInitializedAsync()
     {
         await LoadMessages();
-        // chatMessages = await messageController.GetMessages(Channel);
 
         hubConnection = new HubConnectionBuilder()
             .WithUrl(Navigation.ToAbsoluteUri("/chathub"))
@@ -41,7 +102,7 @@
         hubConnection.On<Message>("ReceiveMessage", (message) =>
         {
             chatMessages.Add(message);
-            StateHasChanged();
+            InvokeAsync(StateHasChanged);
         });
 
         await hubConnection.StartAsync();
@@ -56,7 +117,7 @@
 
     private async Task SendMessage()
     {
-        if (hubConnection is not null)
+        if (!IsEmpty && hubConnection is not null)
         {
             await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
             messageSent = string.Empty;
@@ -66,7 +127,7 @@
 
     private async Task SendPressEnter(KeyboardEventArgs args)
     {
-        if (args.Code == "Enter" && !string.IsNullOrEmpty(messageSent) && hubConnection is not null)
+        if (args.Code == "Enter" && !IsEmpty && hubConnection is not null)
         {
             await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
             messageSent = string.Empty;
