@@ -1,0 +1,47 @@
+﻿@page "/"
+@layout LoginLayout
+@inject NavigationManager Navigation
+@inject CustomAuthenticationStateProvider AuthStateProvider
+
+<PageTitle>AccessMNS - Se connecter</PageTitle>
+
+<MudPaper Class="pa-8 ma-2 login-item" MaxWidth="600px" MinHeight="350px" Elevation="5">
+	<EditForm FormName="Login" Model="deleteMe" OnValidSubmit="OnValidSubmit">
+		<DataAnnotationsValidator />
+
+		<MudText Class="login-text">Nom d'utilisateur :</MudText>
+		<MudTextField Class="login-field" T="string" Variant="Variant.Outlined" @bind-Value="deleteMe.name" Immediate="true" Required></MudTextField>
+
+		<MudText Class="login-text">Mot de passe :</MudText>
+		<MudTextField Class="login-field" T="string" InputType="InputType.Password" Variant="Variant.Outlined" @bind-Value="deleteMe.password" Immediate="true" Required></MudTextField>
+		<MudText class="login-passwordtext">Mot de passe oublié ?</MudText>
+
+		<MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Size="Size.Large" Class="login-button">Connexion</MudButton>
+	</EditForm>
+</MudPaper>
+
+
+@code {
+	private class DeleteMe
+	{
+		public string name { get; set; } = string.Empty;
+		public string password { get; set; } = string.Empty;
+	}
+	private DeleteMe deleteMe = new DeleteMe();
+
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		await AuthStateProvider.LoginAsync(deleteMe.name);
+		Navigation.NavigateTo("/home");
+	}
+
+	protected async Task OnValidSubmit()
+	{
+		if (true)
+		{
+			await AuthStateProvider.LoginAsync(deleteMe.name);
+			Navigation.NavigateTo("/home");
+
+		}
+	}
+}

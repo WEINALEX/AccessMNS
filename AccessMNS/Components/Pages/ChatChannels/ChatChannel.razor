@@ -1,0 +1,249 @@
+﻿@page "/chatchannel/{id:int}&{channel:int}"
+@using Microsoft.AspNetCore.SignalR.Client
+@using System.Text.RegularExpressions;
+@inject NavigationManager Navigation
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<PageTitle>@($"AccessMNS - {Channel}")</PageTitle>
+
+<MudGrid>
+    <MudHidden Breakpoint="Breakpoint.SmAndDown">
+        <MudItem sm="0" md="1"></MudItem>
+    </MudHidden>
+    <MudItem xs="12" md="8" xl="9">
+        <MudContainer Class="position-relative content-area">
+            <MudGrid>
+                <MudContainer Class="d-flex p-0 pb-1 mt-2" Style="border-bottom: 1px solid #1e1e1e; z-index: 3">
+                    <MudItem xs="8" Class="d-flex">
+                        <MudText Typo="Typo.h6" Align="Align.Start" GutterBottom="true" Inline="true">@Channel</MudText>
+                    </MudItem>
+                    <MudItem xs="4" Class="d-flex justify-content-end">
+                        <MudButton Size="Size.Large" EndIcon="@Icons.Material.Filled.Groups" Color="Color.Transparent" OnClick="DisplayChannelMembers">@numberPersonIntoChannel Membres</MudButton>
+                    </MudItem>
+                </MudContainer>
+
+
+                @* DISPLAY USERS MESSAGES : LEFT - RECEIVED / RIGHT - SENDED *@
+                <MudContainer Class="card-font message-container" id="chatContainer" @onscroll="SaveScrollPosition">
+                    @foreach (Message message in chatMessages)
+                    {
+                        if (Id == message.IdUser)
+                        {
+                            <MudItem xs="12" Class="d-flex p-0 justify-content-end" Style="margin-right: 9vh">
+                                <MudText Typo="Typo.button">@message.DateHeureEnvoi</MudText>
+                            </MudItem>
+
+                            <MudItem xs="12" Class="d-flex justify-content-end mb-5">
+                                <MudItem Class="d-flex p-1 card-content">
+                                    <MudCard Elevation="3" Class="mb-3 card-sender w-auto">
+                                        <MudCardContent Class="sender-fontcolor">
+                                            <MudText Typo="Typo.button" GutterBottom="true" Class="card-username">Envoyé par @message.IdUser</MudText>
+                                            <MudText Typo="Typo.body2" Class="text-break sender-text" Style="white-space: pre-wrap">@message.ContenuMessage</MudText>
+                                        </MudCardContent>
+                                    </MudCard>
+                                </MudItem>
+
+                                <MudItem Class="d-flex pt-1">
+                                    <MudAvatar Elevation="3" Class="card-avatar">
+                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                    </MudAvatar>
+                                </MudItem>
+                            </MudItem>
+                        }
+                        else
+                        {
+                            <MudItem xs="12" Class="d-flex p-0" Style="margin-left: 8vh">
+                                <MudText Typo="Typo.button">@message.DateHeureEnvoi</MudText>
+                            </MudItem>
+
+                            <MudItem xs="12" Class="d-flex">
+                                <MudItem Class="pt-1">
+                                    <MudAvatar Elevation="1" Class="card-avatar">
+                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                    </MudAvatar>
+                                </MudItem>
+
+
+                                <MudItem Class="d-flex p-1 card-content">
+                                    <MudCard Elevation="3" Class="mb-3 card-received w-auto">
+                                        <MudCardContent Class="received-fontcolor">
+                                            <MudText Typo="Typo.button" GutterBottom="true" Class="card-username">Envoyé par @message.IdUser</MudText>
+                                            <MudText Typo="Typo.body2" Class="text-break received-text">@message.ContenuMessage</MudText>
+                                        </MudCardContent>
+                                    </MudCard>
+                                </MudItem>
+                            </MudItem>
+                        }
+                    }
+                </MudContainer>
+
+
+                @* DISPLAY SEND TOOLBAR *@
+                <MudContainer Class="d-flex sentbar">
+                    <MudItem xs="11" Class="w-75 pb-4">
+                        <MudTextField T="string" Class="textbar" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" 
+                        Immediate="true" TextUpdateSuppression="false" AutoGrow="true" MaxLines="6"></MudTextField>
+                    </MudItem>
+
+                    <MudItem xs="1">
+                        <MudIconButton Icon="@Icons.Material.Filled.Send" Size="Size.Large" ButtonType="ButtonType.Button" Variant="Variant.Text" Color="Color.Primary" OnClick="SendMessage">Envoyer</MudIconButton>
+                    </MudItem>
+                </MudContainer>
+            </MudGrid>
+        </MudContainer>
+    </MudItem>
+
+    <MudHidden Breakpoint="Breakpoint.MdAndDown">
+        <MudItem md="3" xl="2" Class="position-relative d-flex justify-content-end align-items-end p-0">
+            <MudContainer Class="p-0">
+                <MudButton Class="w-100 onlinemember-button" Variant="Variant.Filled" Size="Size.Large" OnClick="DisplayOnlineMembers">
+                    Online<MudIcon Icon="@Icons.Material.Filled.Circle" Color="Color.Success" Size="Size.Small"></MudIcon>
+                </MudButton>
+
+                <MudCollapse Expanded="onlineOpen" Class="onlinemember-content">
+                    <MudContainer Class="pt-3" Style="height: 95%; overflow-y: auto">
+                        @foreach (string member in OnlineMembers)
+                        {
+                            <MudItem xs="12" Class="d-flex pb-5">
+                                <MudItem xs="3" Class="d-flex">
+                                    <MudAvatar Elevation="2" Size="Size.Medium">
+                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                    </MudAvatar>
+                                </MudItem>
+
+                                <MudItem xs="9" Class="d-flex align-items-center">
+                                    <MudText Typo="Typo.body2">@member</MudText>
+                                </MudItem>
+                            </MudItem>
+                        }
+                    </MudContainer>
+                </MudCollapse>
+            </MudContainer>
+        </MudItem>
+    </MudHidden>
+</MudGrid>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    [Parameter] public int Channel { get; set; }
+    [Inject] IDialogService DialogService { get; set; }
+
+    private bool onlineOpen = false;
+
+    // Simulation base de données
+    private string name = "";
+    private string messageSent = "";
+    private string currentGroup = "";
+    private int numberPersonIntoChannel = 250;
+    private bool IsEmpty => string.IsNullOrEmpty(messageSent) || Regex.IsMatch(messageSent, @"^(\r\n|\n)*$");
+
+    private List<string> OnlineMembers = new List<string> { "Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps",
+    "Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps","Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps","Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps" };
+    // Stockage des messages
+    private List<Message>? chatMessages = new List<Message>();
+
+    private HubConnection? hubConnection;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadMessages();
+
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/chathub"))
+            .WithAutomaticReconnect()
+            .Build();
+
+        hubConnection.On<Message>("ReceiveMessage", (message) =>
+        {
+            chatMessages.Add(message);
+            InvokeAsync(StateHasChanged);
+        });
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("JoinChannel", Channel);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Appeler le scroll après chaque rendu afin de toujours afficher les derniers messages.
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("restoreScrollPosition", "chatContainer");
+        }
+    }
+
+    private async Task SaveScrollPosition()
+    {
+        await JS.InvokeVoidAsync("saveScrollPosition", "chatContainer");
+    }
+
+    private async Task LoadMessages()
+    {
+        await Task.Delay(100);
+        chatMessages = await Http.GetFromJsonAsync<List<Message>>($"https://localhost:44321/api/messages/{Channel}");
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task SendMessage()
+    {
+        if (!IsEmpty && hubConnection is not null)
+        {
+            await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
+            messageSent = string.Empty;
+            await LoadMessages();
+            await ScrollToBottom();
+
+        }
+    }
+
+    private async Task SendPressEnter(KeyboardEventArgs args)
+    {
+        await Task.Delay(50);
+
+        if (args.Code == "Enter" && !args.ShiftKey && !IsEmpty && hubConnection is not null)
+        {
+            await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
+            messageSent = string.Empty;
+            await LoadMessages();
+            await ScrollToBottom();
+
+        }
+    }
+
+    private async Task ScrollToBottom()
+    {
+        await JS.InvokeVoidAsync("scrollToBottom", "chatContainer");
+    }
+
+    public bool IsConnected =>
+        hubConnection?.State == HubConnectionState.Connected;
+
+    // Pour un nettoyage propre lorsque le composant est supprimé
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+
+    private async Task DisplayChannelMembers()
+    {
+        var parameters = new DialogParameters
+        {
+            { "id", Channel },
+            { "user", Id }
+        };
+
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.ExtraSmall, FullWidth = true, BackgroundClass = "listmembers-background listmembers-title" };
+        var dialog = await DialogService.ShowAsync<ListMembers>($"Liste des Membres", parameters, options);
+
+        var result = await dialog.Result;
+    }
+
+    private void DisplayOnlineMembers()
+    {
+        onlineOpen = !onlineOpen;
+    }
+}
