@@ -1,13 +1,12 @@
-using AccessMNS.Components;
-using Microsoft.AspNetCore.Hosting.StaticWebAssets;
-using Microsoft.EntityFrameworkCore;
-using MudBlazor.Services;
-using MudBlazor;
-using AccessMNS.MongoDb;
-using AccessMNS.Controllers;
 using AccessMNS.Classes;
+using AccessMNS.Components;
+using AccessMNS.Controllers;
+using AccessMNS.Services;
+using AccessMNS.MongoDb;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MudBlazor;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,8 +35,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 });
 
 builder.Services.AddScoped<MessageRepository>();
-
-builder.Services.AddMemoryCache();
+builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 
 var app = builder.Build();
 
@@ -51,11 +49,11 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapHub<ChatHub>("/chatHub");
-
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAntiforgery();
+
+app.MapHub<ChatHub>("/chatHub");
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();

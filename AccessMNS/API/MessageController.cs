@@ -1,8 +1,9 @@
-﻿using AccessMNS.Models;
+﻿using AccessMNS.Controllers;
+using AccessMNS.Models;
 using AccessMNS.MongoDb;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AccessMNS.Controllers
+namespace AccessMNS.API
 {
     [ApiController]
     [Route("api/messages")]
