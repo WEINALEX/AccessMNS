@@ -140,7 +140,8 @@ html {
 /***********************************/
 
 .navbar-drawer {
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0 !important;
+    width: 320px !important;
 }
 
 .navlink-position {
@@ -171,7 +172,7 @@ html {
     position: relative;
     background: linear-gradient(var(--first-gradientcolor), var(--second-gradientcolor));
     max-width: 100px;
-    height: 100vh;
+    height: 100%;
     z-index: 2;
 }
 
@@ -184,7 +185,7 @@ html {
     display: inline-block;
     height: 30px;
     font-size: 16px;
-    font-family: Montserrat;
+    font-family: 'Lucida Sans Unicode';
 }
 
 .navbar-icon {
@@ -192,12 +193,12 @@ html {
 }
 
 .navbar-submenu {
-    position: fixed;
+    position: absolute;
     background-color: var(--primary-color);
     border-radius: 0 25px 25px 0;
     margin-left: 100px;
     width: 140px;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 }
 

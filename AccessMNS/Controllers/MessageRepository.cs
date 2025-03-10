@@ -25,7 +25,7 @@ namespace AccessMNS.Controllers
         {
             return await _messagesCollection
                 .Find(m => m.IdCanaux == idCanaux)
-                .SortByDescending(m => m.DateHeureEnvoi)
+                .SortBy(m => m.DateHeureEnvoi)
                 .ToListAsync();
         }
 
