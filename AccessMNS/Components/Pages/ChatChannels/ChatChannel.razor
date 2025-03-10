@@ -46,7 +46,7 @@
 
                                 <MudItem Class="d-flex pt-1">
                                     <MudAvatar Elevation="3" Class="card-avatar">
-                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                        <MudImage Src="images/flashmemory.png" Alt="Avatar"></MudImage>
                                     </MudAvatar>
                                 </MudItem>
                             </MudItem>
@@ -60,7 +60,7 @@
                             <MudItem xs="12" Class="d-flex">
                                 <MudItem Class="pt-1">
                                     <MudAvatar Elevation="1" Class="card-avatar">
-                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                        <MudImage Src="images/flashmemory.png" Alt="Avatar"></MudImage>
                                     </MudAvatar>
                                 </MudItem>
 
@@ -108,7 +108,7 @@
                             <MudItem xs="12" Class="d-flex pb-5">
                                 <MudItem xs="3" Class="d-flex">
                                     <MudAvatar Elevation="2" Size="Size.Medium">
-                                        <MudImage Src="flashmemory.png" Alt="Avatar"></MudImage>
+                                        <MudImage Src="images/flashmemory.png" Alt="Avatar"></MudImage>
                                     </MudAvatar>
                                 </MudItem>
 
@@ -181,7 +181,7 @@
     private async Task LoadMessages()
     {
         await Task.Delay(100);
-        chatMessages = await Http.GetFromJsonAsync<List<Message>>($"https://localhost:44321/api/messages/{Channel}");
+        chatMessages = await Http.GetFromJsonAsync<List<Message>>($"https://localhost:44391/api/messages/{Channel}");
         await InvokeAsync(StateHasChanged);
     }
 

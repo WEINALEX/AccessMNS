@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSignalR();
 
+builder.Services.AddHttpClient();
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMudBlazorDialog();
@@ -34,7 +36,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     return new MongoClient(settings.ConnectionString);
 });
 
-builder.Services.AddScoped<MessageRepository>();
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 
 var app = builder.Build();
@@ -53,7 +55,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAntiforgery();
 
-app.MapHub<ChatHub>("/chatHub");
+app.MapControllers();
+app.MapHub<ChatHub>("/chathub");
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();

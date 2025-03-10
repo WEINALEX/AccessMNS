@@ -13,7 +13,7 @@ namespace AccessMNS.Models
         public string ContenuMessage { get; set; } = string.Empty;
 
         [BsonElement("dateHeureEnvoi")]
-        public DateTime DateHeureEnvoi { get; set; } = DateTime.Now;
+        public DateTime DateHeureEnvoi { get; set; } = DateTime.UtcNow;
 
         [BsonElement("idUser")]
         public int IdUser { get; set; }
