@@ -99,12 +99,6 @@
     font-size: 60px;
 }
 
-.navlink-position {
-    position: absolute;
-    width: auto;
-    right: 0%;
-}
-
 @media (min-width: 641px) {
     .navbar-toggler {
         display: none;

@@ -27,3 +27,18 @@ function isAtBottom(chatId) {
     }
     return false;
 }
+
+function isDarkMode(darkmode) {
+    let root = document.documentElement;
+    if (darkmode) {
+        root.style.setProperty('--text-bar-background', '#1a1a27');
+    }
+    else {
+        root.style.setProperty('--text-bar-background', '#ffffff');
+    }
+}
+
+function convertUtcToLocal(utcDate) {
+    let date = new Date(utcDate);
+    return date.toLocaleString(); // Affiche selon le fuseau de l'utilisateur
+}

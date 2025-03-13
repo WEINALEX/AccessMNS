@@ -1,8 +1,7 @@
 using AccessMNS.Classes;
 using AccessMNS.Components;
-using AccessMNS.Controllers;
+using AccessMNS.Repositories;
 using AccessMNS.Services;
-using AccessMNS.MongoDb;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MudBlazor;

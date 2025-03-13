@@ -1,4 +1,4 @@
-﻿namespace AccessMNS.MongoDb
+﻿namespace AccessMNS.Services
 {
     public class MongoDbSettings
     {

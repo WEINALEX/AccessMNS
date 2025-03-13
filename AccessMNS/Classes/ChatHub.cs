@@ -1,5 +1,5 @@
-﻿using AccessMNS.Controllers;
-using AccessMNS.Models;
+﻿using AccessMNS.Models;
+using AccessMNS.Repositories;
 using Microsoft.AspNetCore.SignalR;
 using MongoDB.Driver;
 

@@ -9,16 +9,16 @@
 
 <MudGrid>
     <MudHidden Breakpoint="Breakpoint.SmAndDown">
-        <MudItem sm="0" md="1"></MudItem>
+        <MudItem md="1"></MudItem>
     </MudHidden>
-    <MudItem xs="12" md="8" xl="9">
+    <MudItem xs="12" md="8" xl="9" Style="padding-right: 24px;">
         <MudContainer Class="position-relative content-area">
             <MudGrid>
-                <MudContainer Class="d-flex p-0 pb-1 mt-2" Style="border-bottom: 1px solid #1e1e1e; z-index: 3">
-                    <MudItem xs="8" Class="d-flex">
-                        <MudText Typo="Typo.h6" Align="Align.Start" GutterBottom="true" Inline="true">@Channel</MudText>
+                <MudContainer Class="p-0 channel-border">
+                    <MudItem xs="6" md="8" Class="d-flex align-content-center">
+                        <MudText Class="channel-title" Typo="Typo.h6" GutterBottom="true" Inline="true">@Channel mmmmmmmmmm mmmmm mmmmmm</MudText>
                     </MudItem>
-                    <MudItem xs="4" Class="d-flex justify-content-end">
+                    <MudItem xs="6" md="4" Class="d-flex justify-content-end">
                         <MudButton Size="Size.Large" EndIcon="@Icons.Material.Filled.Groups" Color="Color.Transparent" OnClick="DisplayChannelMembers">@numberPersonIntoChannel Membres</MudButton>
                     </MudItem>
                 </MudContainer>
@@ -81,12 +81,12 @@
 
                 @* DISPLAY SEND TOOLBAR *@
                 <MudContainer Class="d-flex sentbar">
-                    <MudItem xs="11" Class="w-75 pb-4">
+                    <MudItem xs="10" md="11" Class="w-75 pb-4">
                         <MudTextField T="string" Class="textbar" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" 
                         Immediate="true" TextUpdateSuppression="false" AutoGrow="true" MaxLines="6"></MudTextField>
                     </MudItem>
 
-                    <MudItem xs="1">
+                    <MudItem xs="2" md="1">
                         <MudIconButton Icon="@Icons.Material.Filled.Send" Size="Size.Large" ButtonType="ButtonType.Button" Variant="Variant.Text" Color="Color.Primary" OnClick="SendMessage">Envoyer</MudIconButton>
                     </MudItem>
                 </MudContainer>
@@ -166,10 +166,23 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        // Appeler le scroll après chaque rendu afin de toujours afficher les derniers messages.
+        // Appeler le scroll au premier rendu afin d'afficher les derniers messages.
         if (firstRender)
         {
             await JS.InvokeVoidAsync("restoreScrollPosition", "chatContainer");
+        }
+
+        await ConvertUtcToLocalTime();
+    }
+
+    private async Task ConvertUtcToLocalTime()
+    {
+        string localTime;
+
+        foreach (var message in chatMessages)
+        {
+            localTime = await JS.InvokeAsync<string>("convertUtcToLocal", message.DateHeureEnvoi);
+            message.DateHeureEnvoi = DateTime.Parse(localTime);
         }
     }
 
@@ -192,6 +205,7 @@
             await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
             messageSent = string.Empty;
             await LoadMessages();
+            await ConvertUtcToLocalTime();
             await ScrollToBottom();
 
         }
@@ -206,6 +220,7 @@
             await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
             messageSent = string.Empty;
             await LoadMessages();
+            await ConvertUtcToLocalTime();
             await ScrollToBottom();
 
         }

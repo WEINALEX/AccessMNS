@@ -1,9 +1,9 @@
 ﻿using AccessMNS.Models;
-using AccessMNS.MongoDb;
+using AccessMNS.Services;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace AccessMNS.Controllers
+namespace AccessMNS.Repositories
 {
     public interface IMessageRepository
     {
