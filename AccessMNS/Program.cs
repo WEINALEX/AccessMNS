@@ -1,7 +1,9 @@
 using AccessMNS.Classes;
 using AccessMNS.Components;
+using AccessMNS.Data;
 using AccessMNS.Repositories;
 using AccessMNS.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MudBlazor;
@@ -25,6 +27,10 @@ builder.Services.AddMudServices(config =>
 });
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 builder.Services.Configure<MongoDbSettings>(
     builder.Configuration.GetSection("MongoDbSettings"));

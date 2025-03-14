@@ -1,6 +1,4 @@
 ﻿@page "/chatchannel/{id:int}&{channel:int}"
-@using Microsoft.AspNetCore.SignalR.Client
-@using System.Text.RegularExpressions;
 @inject NavigationManager Navigation
 @inject HttpClient Http
 @inject IJSRuntime JS
@@ -96,30 +94,7 @@
 
     <MudHidden Breakpoint="Breakpoint.MdAndDown">
         <MudItem md="3" xl="2" Class="position-relative d-flex justify-content-end align-items-end p-0">
-            <MudContainer Class="p-0">
-                <MudButton Class="w-100 onlinemember-button" Variant="Variant.Filled" Size="Size.Large" OnClick="DisplayOnlineMembers">
-                    Online<MudIcon Icon="@Icons.Material.Filled.Circle" Color="Color.Success" Size="Size.Small"></MudIcon>
-                </MudButton>
-
-                <MudCollapse Expanded="onlineOpen" Class="onlinemember-content">
-                    <MudContainer Class="pt-3" Style="height: 95%; overflow-y: auto">
-                        @foreach (string member in OnlineMembers)
-                        {
-                            <MudItem xs="12" Class="d-flex pb-5">
-                                <MudItem xs="3" Class="d-flex">
-                                    <MudAvatar Elevation="2" Size="Size.Medium">
-                                        <MudImage Src="images/flashmemory.png" Alt="Avatar"></MudImage>
-                                    </MudAvatar>
-                                </MudItem>
-
-                                <MudItem xs="9" Class="d-flex align-items-center">
-                                    <MudText Typo="Typo.body2">@member</MudText>
-                                </MudItem>
-                            </MudItem>
-                        }
-                    </MudContainer>
-                </MudCollapse>
-            </MudContainer>
+            <OnlineMembers />
         </MudItem>
     </MudHidden>
 </MudGrid>
@@ -129,8 +104,6 @@
     [Parameter] public int Channel { get; set; }
     [Inject] IDialogService DialogService { get; set; }
 
-    private bool onlineOpen = false;
-
     // Simulation base de données
     private string name = "";
     private string messageSent = "";
@@ -138,8 +111,6 @@
     private int numberPersonIntoChannel = 250;
     private bool IsEmpty => string.IsNullOrEmpty(messageSent) || Regex.IsMatch(messageSent, @"^(\r\n|\n)*$");
 
-    private List<string> OnlineMembers = new List<string> { "Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps",
-    "Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps","Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps","Jacques Pruneaux", "Martine Hubert", "CoolYA Dusoleil", "Bien-tôt Leprintemps" };
     // Stockage des messages
     private List<Message>? chatMessages = new List<Message>();
 
@@ -200,6 +171,8 @@
 
     private async Task SendMessage()
     {
+        await Task.Delay(50);
+
         if (!IsEmpty && hubConnection is not null)
         {
             await hubConnection.SendAsync("SendMessage", Channel, Id, messageSent);
@@ -255,10 +228,5 @@
         var dialog = await DialogService.ShowAsync<ListMembers>($"Liste des Membres", parameters, options);
 
         var result = await dialog.Result;
-    }
-
-    private void DisplayOnlineMembers()
-    {
-        onlineOpen = !onlineOpen;
     }
 }
