@@ -1,5 +1,6 @@
 using AccessMNS.Classes;
 using AccessMNS.Components;
+using AccessMNS.Controllers;
 using AccessMNS.Data;
 using AccessMNS.Repositories;
 using AccessMNS.Services;
@@ -41,6 +42,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     return new MongoClient(settings.ConnectionString);
 });
 
+builder.Services.AddScoped<UserController>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 

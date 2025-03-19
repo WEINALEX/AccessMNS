@@ -13,6 +13,8 @@ namespace AccessMNS.Models
         public string FirstName { get; set; }
         [Required]
         public string Email { get; set; }
+        [Required]
+        public string Password { get; set; }
         [ForeignKey("UserRole")]
         public int Id_Role { get; set; }
         [ForeignKey("UserStatus")]

@@ -54,16 +54,24 @@ namespace AccessMNS.Data
                 .Property(ts => ts.Id)
                 .HasColumnName("Id");
 
-
-            // Liaison à faire ...
             modelBuilder.Entity<Channel>()
-                .ToTable("channel");
+                .ToTable("channel")
+                .Property(ts => ts.Id)
+                .HasColumnName("Id");
+
+            modelBuilder.Entity<Channel>()
+                .HasOne(ts => ts.ChannelType)
+                .WithMany(t => t.Channels)
+                .HasForeignKey(ts => ts.Id_Channel_Type);
 
             modelBuilder.Entity<ChannelType>()
-                .ToTable("channel_type");
+                .ToTable("channel_type")
+                .Property(ts => ts.Id)
+                .HasColumnName("Id");
 
             modelBuilder.Entity<ChannelMember>()
-                .ToTable("channel_member");
+                .ToTable("channel_member")
+                .HasKey(e => new { e.IdUser, e.IdChannel });
         }
     }
 }
