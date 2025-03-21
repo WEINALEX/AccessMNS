@@ -28,7 +28,7 @@
                     {
                         if (Id == message.IdUser)
                         {
-                            <MudItem xs="12" Class="d-flex p-0 justify-content-end" Style="margin-right: 9vh">
+                            <MudItem xs="12" Class="d-flex p-0 justify-content-end" Style="margin-right: 8vh">
                                 <MudText Typo="Typo.button">@message.DateHeureEnvoi</MudText>
                             </MudItem>
 
@@ -78,8 +78,8 @@
 
 
                 @* DISPLAY SEND TOOLBAR *@
-                <MudContainer Class="d-flex sentbar">
-                    <MudItem xs="10" md="11" Class="w-75 pb-4">
+                <MudContainer Class="sentbar">
+                    <MudItem xs="10" md="11" Class="w-75 pb-4" Style="max-width: 800px;">
                         <MudTextField T="string" Class="textbar" Placeholder="Votre message" Variant="Variant.Outlined" @bind-Value="messageSent" OnKeyUp="SendPressEnter" 
                         Immediate="true" TextUpdateSuppression="false" AutoGrow="true" MaxLines="6"></MudTextField>
                     </MudItem>

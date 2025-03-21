@@ -324,9 +324,9 @@ html {
     position: absolute;
     padding: 0;
     bottom: 0;
-    background-color: var(--text-bar-background);
-/*    width: 100%;*/
+    display: flex;
     justify-content: center;
+    background-color: var(--text-bar-background);
     z-index: 3;
 }
 
@@ -335,6 +335,7 @@ html {
     border-radius: 25px 25px;
     border: var(--border);
     box-shadow: 4px 4px 4px inset;
+ 
 }
 
 .textbar .mud-input.mud-input-outlined .mud-input-outlined-border {
