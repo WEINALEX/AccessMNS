@@ -12,8 +12,10 @@ namespace AccessMNS.Models
         [Required]
         public string FirstName { get; set; }
         [Required]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [ForeignKey("UserRole")]
         public int Id_Role { get; set; }
@@ -21,6 +23,7 @@ namespace AccessMNS.Models
         public int Id_Status { get; set; }
         [ForeignKey("UserGroup")]
         public int? Id_Group { get; set; }
+        [DataType(DataType.ImageUrl)]
         public string? Avatar { get; set; }
 
         public virtual Role UserRole { get; set; }

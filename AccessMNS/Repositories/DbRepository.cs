@@ -1,4 +1,5 @@
 ﻿using AccessMNS.Data;
+using AccessMNS.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccessMNS.Repositories
@@ -7,6 +8,7 @@ namespace AccessMNS.Repositories
     {
         Task AddAsync(T entity);
         Task DeleteAsync(T entity);
+        Task<List<T>> Filter(Func<T, bool> filter);
         Task<List<T>> GetAllAsync();
         Task<T?> GetByIdAsync(int id);
         void Update(T entity);
@@ -29,6 +31,13 @@ namespace AccessMNS.Repositories
         public async Task<T?> GetByIdAsync(int id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
+        }
+
+        public async Task<List<T>> Filter(Func<T, bool> filter)
+        {
+            var entity = await GetAllAsync();
+
+            return entity.Where(filter).ToList();
         }
 
         public async Task AddAsync(T entity)

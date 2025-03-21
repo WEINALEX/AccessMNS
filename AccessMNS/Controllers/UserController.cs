@@ -21,6 +21,11 @@ namespace AccessMNS.Controllers
             return await _userDbRepository.GetAllAsync();
         }
 
+        public async Task<User?> GetById(int id)
+        {
+            return await _userDbRepository.GetByIdAsync(id);
+        }
+
         public async Task<User?> GetByIdentity(string email, string password)
         {
             return await _dbContext.User.FirstOrDefaultAsync(e => e.Email == email && e.Password == password);
@@ -28,9 +33,7 @@ namespace AccessMNS.Controllers
 
         public async Task<List<User>> Filter(Func<User, bool> filter)
         {
-            var users = await GetAllAsync();
-
-            return users.Where(filter).ToList();
+            return await _userDbRepository.Filter(filter);
         }
 
         public async Task AddUser(User user)
